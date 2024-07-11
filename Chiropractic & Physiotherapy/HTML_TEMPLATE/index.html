@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tudebon - Homepage</title>
+</head>
+
+<body>
+  <!-- Scripts -->
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/swiper-script.js"></script>
+  <script src="js/submit-form.js"></script>
+  <script src="js/vendor/isotope.pkgd.min.js"></script>
+
+  <!-- Header -->
+  <section class="sticky-top bg-accent-color-1" style="direction: rtl;">
+    <div class="r-container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="logo-container">
+            <img src="image/LoGo.png" alt="" class="img-fluid" style="max-width: 55px;">
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="collapse p-lg-0 px-2 py-3 navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="about_us.html">عننا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="service_detail.html">خدماتنا</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="appointment.html">احجز موعد</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="therapist.html">االاقسام</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="blog.html">المدونة</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="service_detail.html" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  خدماتنا
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="services.html">Services</a></li>
+                    <li><a class="dropdown-item" href="service_detail.html">Service Detail</a></li>
+                  </ul>
+              </li> -->
+
+
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="appointment.html" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  احجز
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="appointment.html">Appointment</a></li>
+                    <li><a class="dropdown-item" href="therapist.html">Therapist</a></li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                    <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                  </ul>
+              </li> -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  المدونة
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                    <li><a class="dropdown-item" href="single_blog.html">Single Blog</a></li>
+                  </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+              </li>
+            </ul>
+            <div>
+              <div class="d-flex flex-row align-items-center gap-3 text-white" style="direction: ltr;">
+                <span class="fs-2"><i class="fa-solid fa-phone"></i></span>
+                <div class="d-flex flex-column">
+                  <span class="font-2">اتصل بنا</span>
+                  <!-- <span style="direction: ltr;">+201556555816</span> -->
+                  <span style="direction: ltr; color: white;"><a href="tel:+201556555816"
+                      style="color: white;">+201556555816</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!-- End Of Header -->
+
+  <main>
+    <!-- Banner -->
+    <section class="section position-relative" style="background-image: url(image/1.png); height: 90vh;">
+      <div class="image-overlay"></div>
+      <div class="r-container position-relative h-100" style="z-index: 2;">
+        <div class="row row-cols-lg-2 row-cols-1 w-100 h-100">
+          <div class="col h-100">
+            <div class="d-flex flex-column h-100 justify-content-center gap-3">
+              <h6 class="fw-semibold font-1 accent-color-1 ls-2">الدكتور احمد العطار</h6>
+              <h2 class="accent-color font-1 fw-semibold">حافظ على قوة عظامك وصحتها</h2>
+              <!-- <p class="font-1">
+                Aliquam ex nibh, rhoncus quis mi nec, imperdiet mattis est. Suspendisse potenti. Duis
+                vestibulum magna quis suscipit tempus.
+              </p> -->
+              <div class="d-flex flex-row gap-5">
+                <a href="appointment.html" class="btn button font-1 ls-2 fw-semibold fs-7 py-3 px-4">
+                  حدد مقابلة</a>
+                <button type="button" class="btn request-loader" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade bg-overlay" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-dark-color">
+            <iframe class="ifr-video" src="https://www.youtube.com/embed/TuWjYCefhW0" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="pb-5 position-relative" style="margin-top: -100px;">
+      <div class="r-container">
+        <div class="w-100 mx-auto row row-cols-1 row-cols-lg-3 px-3 px-lg-0">
+          <div class="col"></div>
+          <div class="col mb-3">
+            <div class="bg-accent-color-1 rounded-3 p-3  text-white text-center d-flex flex-column">
+              <h2><i class="fa-solid fa-award"></i></h2>
+              <h5 class="font-2">ضمان الجودة</h5>
+              <p>نلتزم بتقديم أعلى مستويات الجودة في الرعاية الطبية لضمان
+                راحة وسلامة المرضى.</p>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="bg-accent-color rounded-3 p-3  text-white text-center d-flex flex-column">
+              <h2><i class="fa-solid fa-user-doctor"></i></h2>
+              <h5 class="font-2">طبيب عظام محترف</h5>
+              <p>متخصص في علاج أمراض العظام باستخدام أحدث التقنيات الطبية.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT TUDEBON -->
+    <section class="section" style="direction: rtl;">
+      <div class="r-container">
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col mb-3">
+            <div class="position-relative ps-5">
+              <a href="image/Attar.jpg" data-fslightbox="gallery">
+                <img src="image/Attar.jpg" alt="" class="img-fluid rounded-4">
+              </a>
+              <!-- <div class="position-absolute top-0 start-0 bg-accent-color rounded-4 p-4 text-white text-center mt-5">
+                <h3 class="font-1 fw-semibold m-0">15<sup class="fw-normal">سنة</sup></h3>
+                <span class="font-1">سنين من الخبرة</span>
+              </div> -->
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center px-3">
+              <h6 class="fw-semibold font-1 accent-color-1 ls-2">عن العطار</h6>
+              <h3 class="accent-color font-1 fw-semibold">توفير مستوى عالٍ من الرعاية</h3>
+              <p class="font-2 fw-light">
+                نحن ملتزمون بتوفير مستوى عالٍ من الرعاية الطبية لجميع مرضانا. نسعى دائمًا لتقديم أحدث العلاجات الطبية
+                ونتبع أفضل الممارسات والمعايير الدولية لضمان أن يحصل كل مريض على العلاج الأمثل والراحة التامة. نولي
+                اهتمامًا كبيرًا لكل تفصيل صغير لضمان السلامة والجودة في كل خطوة.
+                <br><br>
+                فريقنا الطبي يتكون من خبراء متخصصين في مجالاتهم، مما يضمن تلقيك لأفضل رعاية ممكنة. كما نحرص على تحديث
+                معرفتنا ومهاراتنا بشكل مستمر لمواكبة أحدث التطورات في الطب.
+              </p>
+              <div class="row row-cols-1 row-cols-lg-2 mb-4">
+                <div class="col">
+                  <div class="d-flex flex-row align-items-center gap-3">
+                    <img src="image/icon-eye.png" alt="" class="img-fluid" width="50" height="50">
+                    <div class="d-flex flex-column justify-content-center">
+                      <h5 class="m-0">رؤيتنا</h5>
+                      <p class="m-0">رؤيتنا تتمحور حول تحقيق راحة تامة، ثقة مع مرضانا.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="d-flex flex-row align-items-center gap-3">
+                    <img src="image/icon-bullseye.png" alt="" class="img-fluid" width="50" height="50">
+                    <div class="d-flex flex-column justify-content-center">
+                      <h5 class="m-0">مهمتنا</h5>
+                      <p class="m-0">نحن ملتزمون بتقديم أفضل مستويات الرعاية الطبية</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="about_us.html" class="btn button font-1 ls-2 fw-semibold fs-7 py-3 px-4">
+                  اقرأ المزيد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section bg-color-2">
+      <div class="r-container">
+        <div class="d-flex flex-column text-center gap-2">
+          <h6 class="fw-semibold font-1 accent-color-1 ls-2">الخدمات</h6>
+          <h3 class="accent-color font-1 fw-semibold">الظروف التي يمكننا التعامل معها</h3>
+          <p class="font-2 fw-light mx-auto" style="max-width: 912px; text-align: end;">
+            نحن متخصصون في علاج وإدارة مجموعة واسعة من الظروف الطبية. نستطيع التعامل مع كسور العظام، آلام المفاصل،
+            التهابات العظام والمفاصل، وأمراض العمود الفقري. كما نقدم خدمات في علاج الإصابات الرياضية وتقويم العظام. نحن
+            هنا لتوفير الرعاية الطبية المتقدمة والشاملة لجميع مرضانا.
+
+          </p>
+          <div class="w-100 row row-cols-1 row-cols-lg-3">
+            <div class="col mb-3">
+              <div
+                class="rounded-3 border border-3 p-5 d-flex flex-column justify-content-center align-items-center gap-3"
+                style="--bs-border-color: var(--accent-color-1);">
+                <img src="image/icon1.png" alt="" class="img-fluid" width="80" height="80">
+                <h5> تقويم العمود الفقري
+                </h5>
+                <p>Suspendisse nec magna ac magna sagittis tristique etiam sagittis.</p>
+                <a href="" class="btn font-1 fw-semibold accent-color-1">READ MORE <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div
+                class="rounded-3 border border-3 p-5 d-flex flex-column justify-content-center align-items-center gap-3"
+                style="--bs-border-color: var(--accent-color-1);">
+                <img src="image/icon2.png" alt="" class="img-fluid" width="80" height="80">
+                <h5>العلاج بالإبر
+                </h5>
+                <p>Suspendisse nec magna ac magna sagittis tristique etiam sagittis.</p>
+                <a href="service_detail.html" class="btn font-1 fw-semibold accent-color-1">READ MORE <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div
+                class="rounded-3 border border-3 p-5 d-flex flex-column justify-content-center align-items-center gap-3"
+                style="--bs-border-color: var(--accent-color-1);">
+                <img src="image/icon3.png" alt="" class="img-fluid" width="80" height="80">
+                <h5>العلاج بالتدليك
+                </h5>
+                <p>Suspendisse nec magna ac magna sagittis tristique etiam sagittis.</p>
+                <a href="service_detail.html" class="btn font-1 fw-semibold accent-color-1">READ MORE <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div
+                class="rounded-3 border border-3 p-5 d-flex flex-column justify-content-center align-items-center gap-3"
+                style="--bs-border-color: var(--accent-color-1);">
+                <img src="image/icon4.png" alt="" class="img-fluid" width="80" height="80">
+                <h5>Sports Chiropractic</h5>
+                <p>Suspendisse nec magna ac magna sagittis tristique etiam sagittis.</p>
+                <a href="service_detail.html" class="btn font-1 fw-semibold accent-color-1">READ MORE <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div
+                class="rounded-3 border border-3 p-5 d-flex flex-column justify-content-center align-items-center gap-3"
+                style="--bs-border-color: var(--accent-color-1);">
+                <img src="image/icon5.png" alt="" class="img-fluid" width="80" height="80">
+                <h5>Laser Therapy</h5>
+                <p>Suspendisse nec magna ac magna sagittis tristique etiam sagittis.</p>
+                <a href="service_detail.html" class="btn font-1 fw-semibold accent-color-1">READ MORE <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div
+                class="rounded-3 border border-3 p-5 d-flex flex-column justify-content-center align-items-center gap-3"
+                style="--bs-border-color: var(--accent-color-1);">
+                <img src="image/icon6.png" alt="" class="img-fluid" width="80" height="80">
+                <h5>Pediatric Chiropractic</h5>
+                <p>Suspendisse nec magna ac magna sagittis tristique etiam sagittis.</p>
+                <a href="service_detail.html" class="btn font-1 fw-semibold accent-color-1">READ MORE <i
+                    class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNER -->
+    <!-- <section class="section">
+      <div class="r-container">
+        <div class="w-100 row row-cols-1 row-cols-lg-2">
+          <div class="col col-lg-5">
+            <div class="d-flex flex-column gap-3">
+              <h6 class="fw-semibold font-1 accent-color-1 ls-2">PARTNER</h6>
+              <h3 class="accent-color font-1 fw-semibold">Partners & Associations</h3>
+              <p class="font-2 fw-light mx-auto my-0" style="max-width: 912px;">
+                Aliquam ex nibh, rhoncus quis mi nec, imperdiet mattis est. Suspendisse potenti duis.
+              </p>
+            </div>
+          </div>
+          <div class="col col-lg-7 d-flex align-items-center">
+            <div class="row row-cols-1 row-cols-lg-3">
+              <div class="col">
+                <img src="image/logo-ipsum-1.png" alt="" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="image/logo-ipsum-2.png" alt="" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="image/logo-ipsum-3.png" alt="" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="image/logo-ipsum-4.png" alt="" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="image/logo-ipsum-5.png" alt="" class="img-fluid">
+              </div>
+              <div class="col">
+                <img src="image/logo-ipsum-6.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section position-relative bg-attach-fixed" style="background-image: url(image/banner3.jpg);">
+      <div class="image-overlay-2"></div>
+      <div class="r-container position-relative mb-5" style="z-index: 2;">
+        <div class="w-100 row row-cols-1 row-cols-lg-4 text-center text-white"
+          style="display: flex; justify-content: space-between;">
+          <div class="col mb-3">
+            <div class="d-flex flex-column">
+              <h3><i class="fa-solid fa-users"></i></h3>
+              <h3 class="font-1 fw-semibold m-0">1,200<sup class="fw-normal">+</sup></h3>
+              <span class="font-1">Happy Patients</span>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="d-flex flex-column">
+              <h3><i class="fa-solid fa-award"></i></h3>
+              <h3 class="font-1 fw-semibold m-0">15<sup class="fw-normal">Th</sup></h3>
+              <span class="font-1">Years of Experience</span>
+            </div>
+          </div>
+          <!-- <div class="col mb-3">
+            <div class="d-flex flex-column">
+              <h3><i class="fa-solid fa-user-doctor"></i></h3>
+              <h3 class="font-1 fw-semibold m-0">250<sup class="fw-normal">+</sup></h3>
+              <span class="font-1">Therapist & Staff</span>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="d-flex flex-column">
+              <h3><i class="fa-solid fa-hospital"></i></h3>
+              <h3 class="font-1 fw-semibold m-0">75<sup class="fw-normal">+</sup></h3>
+              <span class="font-1">Branch Clinic</span>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="pb-5 position-relative" style="margin-top: -100px;">
+      <div class="r-container">
+        <div class="rounded-3 bg-color-2 p-5">
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col mb-3">
+              <a href="image/banner1.jpg" data-fslightbox="gallery">
+                <img src="image/banner1.jpg" alt="" class="rounded-3 img-fluid">
+              </a>
+              <div class="d-flex flex-column gap-3 mt-3">
+                <div class="r-progress w-100" style="--value:95;">
+                  <span class="accent-color font-2">الخبرة</span>
+                  <div class="progress-container">
+                    <div class="r-progress-bar percentage-label">
+                      <div class="progress-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="r-progress w-100" style="--value:87;">
+                  <span class="accent-color font-2">العلاج</span>
+                  <div class="progress-container">
+                    <div class="r-progress-bar percentage-label">
+                      <div class="progress-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="r-progress w-100" style="--value:96;">
+                  <span class="accent-color font-2">Therapist</span>
+                  <div class="progress-container">
+                    <div class="r-progress-bar percentage-label">
+                      <div class="progress-value"></div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="d-flex flex-column gap-3">
+                <h6 class="fw-semibold font-1 accent-color-1 ls-2 text-end">لماذا نحن</h6>
+                <h3 class="accent-color font-1 fw-semibold text-end">العديد من الحلول</h3>
+                <p class="font-2 fw-light mx-auto my-0 text-end" style="max-width: 912px;">
+                  يتمتع دكتور العطار بخبرة واسعة في مجال جراحة العظام، حيث أجرى العديد من العمليات الناجحة وقدم العناية
+                  الطبية المتميزة للمرضى. يهتم دكتور العطار بتقديم رعاية شخصية لكل مريض، حيث يستمع بعناية إلى مخاوف
+                  المرضى ويضع خطط علاج مخصصة لتلبية احتياجاتهم الفردية.
+                </p>
+                <div class="d-flex flex-column gap-2 " style="direction: rtl;">
+                  <div class="d-flex flex-row gap-2 font-2 align-items-center">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    معالج محترف معتمد
+                  </div>
+                  <div class="d-flex flex-row gap-2 font-2 align-items-center">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    علاج عالي الجودة وأفضل المعدات
+                  </div>
+                  <div class="d-flex flex-row gap-2 font-2 align-items-center">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    فريق عمل ودود ولطيف
+                  </div>
+                  <div class="d-flex flex-row gap-2 font-2 align-items-center">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    أسعار ممتازة وعلاج مضمون
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE WORK -->
+    <section class="section">
+      <div class="r-container">
+        <div class="d-flex flex-column gap-3 text-center">
+          <h6 class="fw-semibold font-1 accent-color-1 ls-2">كيف نعمل</h6>
+          <h3 class="accent-color font-1 fw-semibold">مراحل الاستشارة</h3>
+          <p class="font-2 fw-light mx-auto" style="max-width: 912px;">
+            نقدم استشارات متكاملة تبدأ بتقييم شامل لحالتك الصحية، مرورًا بتحديد خطة علاج مخصصة تناسب احتياجاتك، وانتهاءً
+            بمتابعة مستمرة لضمان تحقيق أفضل النتائج الممكنة. نحن هنا لنساعدك في كل خطوة على الطريق نحو الشفاء.
+          </p>
+          <div class="row row-cols-1 row-cols-lg-4 mt-3">
+            <div class="col mb-3">
+              <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                <div class="border-3 border rounded-3 p-3 mb-3" style="--bs-border-color: var(--accent-color-1);">
+                  <img src="image/notebook.png" alt="" class="img-fluid" width="40" height="40">
+                </div>
+                <h6 class="font-1 m-0">إحجز موعد</h6>
+                <p class="font-2">
+                  لا تتردد في حجز موعد معنا للاستشارات المتخصصة.
+                </p>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                <div class="border-3 border rounded-3 p-3 mb-3" style="--bs-border-color: var(--accent-color-1);">
+                  <img src="image/consulting.png" alt="" class="img-fluid" width="40" height="40">
+                </div>
+                <h6 class="font-1 m-0">استشارة</h6>
+                <p class="font-2">
+                  يمكنك حجز استشارة للحصول على النصائح اللازمة لحالتك الصحية.
+                </p>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                <div class="border-3 border rounded-3 p-3 mb-3" style="--bs-border-color: var(--accent-color-1);">
+                  <img src="image/back.png" alt="" class="img-fluid" width="40" height="40">
+                </div>
+                <h6 class="font-1 m-0"> تقويم العمود الفقري</h6>
+                <p class="font-2">
+                  تستطيع بتقويم العمود الفقري وتخفيف الألم بطرق طبيعية وآمنة.
+                </p>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                <div class="border-3 border rounded-3 p-3 mb-3" style="--bs-border-color: var(--accent-color-1);">
+                  <img src="image/reviews.png" alt="" class="img-fluid" width="40" height="40">
+                </div>
+                <h6 class="font-1 m-0 ">مراجعة راضية</h6>
+                <p class="font-2">
+                  نحن نفخر بتلقي العديد من المراجعات الإيجابية من مرضانا الذين شعروا بالتحسن .
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Patient Review -->
+    <section class="section">
+      <div class="r-container">
+        <div class="d-flex flex-lg-row flex-column-reverse">
+          <div class="col col-lg-5 mb-3">
+            <div class="d-flex flex-column gap-3">
+              <h3 class="accent-color font-1 fw-semibold fs-1">اراء الناس</h3>
+              <!-- <p class="font-2 fw-light mx-auto" style="max-width: 912px;">
+                Aliquam ex nibh, rhoncus quis mi nec, imperdiet mattis est. Suspendisse potenti duis
+                fringilla massa at rhoncus.
+              </p> -->
+              <div class="overflow-hidden outer-margin">
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="d-flex flex-column bg-accent-color rounded-4 p-5 text-white">
+                        <h1><i class="fa-solid fa-quote-right"></i></h1>
+                        <p class="text-gray mb-4 fst-italic font-1">
+                          ربنا يبارك في حضرتك ويحفظك وجزاك الله عنا كل الخير وربنا يزيدك من فضله وكرمه يارب
+                          وربنا يجعلك دائماً سبب لشفاء
+                          كل مريض يااااارب العالمين</p>
+                        <div class="d-flex flex-column flex-grow-1">
+                          <h6 class="font-2 lh-1">Hamasat Hazena</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="d-flex flex-column bg-accent-color rounded-4 p-5 text-white">
+                        <h1><i class="fa-solid fa-quote-right"></i></h1>
+                        <p class="text-gray mb-4 fst-italic font-1">
+                          دكتور محترم وامين ربنا يباركلك ياباشا ويصلح مابين ايديك</p>
+                        <div class="d-flex flex-column flex-grow-1">
+                          <h6 class="font-2 lh-1">Ahmed Abdul Azzem</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="d-flex flex-column bg-accent-color rounded-4 p-5 text-white">
+                        <h1><i class="fa-solid fa-quote-right"></i></h1>
+                        <p class="text-gray mb-4 fst-italic font-1">
+                          خلوق وشاطر ومجتهد بالتوفيق</p>
+                        <div class="d-flex flex-column flex-grow-1">
+                          <h6 class="font-2 lh-1">Hassan Attia</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="d-flex flex-column bg-accent-color rounded-4 p-5 text-white">
+                        <h1><i class="fa-solid fa-quote-right"></i></h1>
+                        <p class="text-gray mb-4 fst-italic font-1">
+                          شخصية محترمه وشاطر وعنده ضمير</p>
+                        <div class="d-flex flex-column flex-grow-1">
+                          <h6 class="font-2 lh-1">Ashraf Abdalmonam</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="d-flex flex-column bg-accent-color rounded-4 p-5 text-white">
+                        <h1><i class="fa-solid fa-quote-right"></i></h1>
+                        <p class="text-gray mb-4 fst-italic font-1">
+                          ربنا يبارك في حضرتك ويحفظك وجزاك الله عنا كل الخير وربنا يزيدك من فضله وكرمه يارب
+                          وربنا يجعلك دائماً سبب لشفاء
+                          كل مريض يااااارب العالمين</p>
+                        <div class="d-flex flex-column flex-grow-1">
+                          <h6 class="font-2 lh-1">Hamast Hazena</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-7 mb-3">
+            <a href="image/review.png" data-fslightbox="gallery">
+              <img src="image/review.png" alt="" class="img-fluid rounded-4">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section position-relative bg-attach-fixed"
+      style="background-image: url(image/dummy-img-1920x900.jpg);">
+      <div class="image-overlay-2"></div>
+      <div class="r-container position-relative" style="z-index: 2;">
+        <div class="d-flex flex-column gap-3 text-white text-center align-items-center">
+          <h3 class="font-1 fw-semibold" style="font-size: 48px;">Feel Something Wrong With Your Bones?</h3>
+          <p class="font-2 fw-light mx-auto" style="max-width: 912px;">
+            Maecenas dictum fringilla nisi ac malesuada. Donec ac quam non diam elementum ultricies. In hac
+            habitasse platea dictumst. Nullam eu elit sed metus convallis lobortis. Cras a iaculis eros.
+            Phasellus at lectus viverra, sagittis erat quis.
+          </p>
+          <a href="contact.html" class="btn button font-1 ls-2 fw-semibold fs-7 py-3 px-4">FREE
+            CONSULTATION</a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- CHECK OUT OUR BLOG -->
+    <!-- <section class="section">
+      <div class="r-container">
+        <div class="d-flex flex-lg-row flex-column-reverse gap-3">
+          <div class="col col-lg-7">
+            <div class="row row-cols-1 row-cols-lg-2">
+              <div class="col">
+                <div class="card p-3 bg-accent-color-1 rounded-4 with-border-bottom">
+                  <img src="image/dummy-img-600x400.jpg" class="img-fluid" alt="image">
+                  <div class="d-flex flex-column gap-3 p-3 text-white">
+                    <div class="d-flex flex-row gap-4">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-calendar"></i>
+                        October 7, 2023
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        Author
+                      </div>
+                    </div>
+                    <h6 class="font-1">Neck Pain and Treatment with Chiropractic</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum
+                      ultrices nisi, at congue sapien lobortis…
+                    </p>
+                    <div>
+                      <a href="single_blog.html" class="btn text-white p-0 font-1 fw-semibold">
+                        READ MORE
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card p-3 bg-accent-color-1 rounded-4 with-border-bottom">
+                  <img src="image/dummy-img-600x400.jpg" class="img-fluid" alt="image">
+                  <div class="d-flex flex-column gap-3 p-3 text-white">
+                    <div class="d-flex flex-row gap-4">
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-calendar"></i>
+                        October 7, 2023
+                      </div>
+                      <div class="d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        Author
+                      </div>
+                    </div>
+                    <h6 class="font-1">What Your Back Pain is Trying to Tell You</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum
+                      ultrices nisi, at congue sapien lobortis…
+                    </p>
+                    <div>
+                      <a href="single_blog.html" class="btn text-white p-0 font-1 fw-semibold">
+                        READ MORE
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-5">
+            <div class="d-flex flex-column gap-3 ps-lg-4">
+              <h6 class="fw-semibold font-1 accent-color-1 ls-2">CHECK OUT OUR BLOG</h6>
+              <h3 class="accent-color font-1 fw-semibold">Blog & Articles</h3>
+              <p class="font-2 fw-light mx-auto" style="max-width: 912px;">
+                Maecenas dictum fringilla nisi ac malesuada. Donec ac quam non diam elementum ultricies.
+                In hac habitasse platea dictumst nullam eu elit ligula volutpat.
+                <br><br>
+                Ut malesuada lectus non ante eleifend, ac lacus nunc viverra. Etiam ornare neque augue.
+              </p>
+              <div>
+                <a href="blog.html" class="btn button font-1 ls-2 fw-semibold fs-7 py-3 px-4">VIEW
+                  ALL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+
+  <footer>
+    <section class="bg-accent-color-1">
+      <div class="r-container section border-bottom">
+        <div class="row row-cols-1 row-cols-lg-2 w-100">
+          <div class="col col-lg-4">
+            <div class="d-flex flex-column gap-3 text-white">
+              <div class="logo-container">
+                <a href="index.html"> <img src="image/logo.png" alt="" class="img-fluid" style="width: 75%;">
+                </a>
+              </div>
+
+              <div class="social-container">
+                <a href="https://web.facebook.com/doctorahmedalattar/" class="social-item">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.tiktok.com/@dr.ahmed.elattar?is_from_webapp=1&sender_device=pc"
+                  class="social-item">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/@DRAhmedELattar" class="social-item">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/elattar_ahmed" class="social-item">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-8">
+            <div class="row row-cols-1 row-cols-lg-3 text-white">
+              <div class="col">
+                <h5 class="font-2 mb-3">روابط سريعة</h5>
+                <ul class="list gap-2">
+                  <li>
+                    <a href="index.html" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      الرئيسية
+                    </a>
+                  </li>
+                  <li>
+                    <a href="about_us.html" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      عننا
+                    </a>
+                  </li>
+                  <li>
+                    <a href="services.html" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      خدمات
+                    </a>
+                  </li>
+                  <li>
+                    <a href="appointment.html" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      حجز موعد
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blog.html" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      المدونة
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      تواصل معنا
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h5 class="font-2 mb-3">خدماتنا</h5>
+                <ul class="list gap-2">
+                  <li>
+                    <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      العناية بتقويم العمود الفقري
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      الوخز بالإبر
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      العلاج بالتدليك
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      تقويم العمود الفقري الرياضي
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      العلاج بالليزر
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                      <i class="fa-regular fa-circle-dot"></i>
+                      تقويم العمود الفقري للأطفال
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h5 class="font-2 mb-3">معلومات</h5>
+                <div class="d-flex flex-column gap-3 zz">
+                  <div class="d-flex flex-row align-items-center gap-3 text-white zz">
+                    <span class="fs-2"><i class="fa-solid fa-phone"></i></span>
+                    <div class="d-flex flex-column">
+                      <span>التليفون</span>
+                      <span><a href="tel:+201556555816"
+                          style="color: inherit; text-decoration: none;">+201556555816</a></span>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center gap-3 text-white">
+                    <span class="fs-2"><i class="fa-solid fa-envelope"></i></span>
+                    <div class="d-flex flex-column">
+                      <span>الايميل</span>
+                      <span><a href="mailto:ahmedelattar37@yahoo.com"
+                          style="color: inherit; text-decoration: none;">ahmedelattar37@yahoo.com</a></span>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center gap-3 text-white">
+                    <span class="fs-2"><i class="fa-solid fa-location-dot"></i></span>
+                    <div class="d-flex flex-column">
+                      <span>العنوان</span>
+                      <span>شارع الجلاء (الجناين) - برج دار الطب - اعلى الطاهر للبصريات - الدور السابع, الزقازيق,
+                        مصر</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-3 text-white text-center">
+        <p class="m-0">Copyright 2023 © All Right Reserved Design by FikraShow</p>
+      </div>
+    </section>
+  </footer>
+
+  <script src="js/vendor/fslightbox.js"></script>
+  <script src="js/masonry.js"></script>
+</body>
+
+</html>
