@@ -111,7 +111,7 @@
 
   <main>
     <!-- Banner -->
-    <section class="section position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
+    <section class="section position-relative" style="background-image: url(image/banner3.jpg);">
       <div class="image-overlay"></div>
       <div class="r-container position-relative h-100" style="z-index: 2;">
         <div class="d-flex flex-column gap-3">
@@ -206,9 +206,8 @@
               </p>
             </button>
 
-            <div id="myModal" class="modal">
+            <div id="myModal" class="modal" style="display: none;">
 
-              <!-- Modal content -->
               <div class="modal-content">
                 <span class="close">&times;</span>
                 <p>Some text in the Modal..</p>
@@ -222,8 +221,7 @@
       </div>
     </section>
 
-    <section class="section position-relative bg-attach-fixed"
-      style="background-image: url(image/dummy-img-1920x900.jpg);">
+    <section class="section position-relative bg-attach-fixed" style="background-image: url(image/6.jpg);">
       <div class="image-overlay-2"></div>
       <div class="r-container position-relative" style="z-index: 2;">
         <div class="d-flex flex-column gap-3 text-white text-center align-items-center">
@@ -524,7 +522,6 @@
     </section>
   </footer>
   <script>
-    // Get the modal
     var modal = document.getElementById("myModal");
 
     // Get the button that opens the modal
@@ -535,7 +532,7 @@
 
     // When the user clicks on the button, open the modal
     btn.onclick = function () {
-      modal.style.display = "block";
+      modal.style.display = "flex";
     }
 
     // When the user clicks on <span> (x), close the modal
